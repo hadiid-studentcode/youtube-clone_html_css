@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Studio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+  </head>
+  <body class="bg-dark">
+    <header>
+      <nav
+        class="navbar navbar-expand-lg navbar-dark"
+        data-bs-theme="dark"
+        aria-label="Thirteenth navbar example"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler mb-2"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarsExample11"
+            aria-controls="navbarsExample11"
+            aria-expanded="true"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <a
+            class="navbar-brand mt-2 d-none d-lg-block"
+            data-bs-toggle="offcanvas"
+            href="#sidebar"
+            role="button"
+            aria-controls="offcanvasExample"
+          >
+            <span class="material-symbols-outlined fs-2"> menu </span>
+          </a>
+
+          <a class="navbar-brand" href="#">
+            <img
+              src="./images/logo.png"
+              alt="Bootstrap"
+              width="30"
+              height="30"
+            />
+          </a>
+          <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
+            <a class="navbar-brand col-lg-3 me-0" href="#"> Studio</a>
+            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
+              <li class="nav-item">
+                <div class="input-group mb-3 mb-lg-0 mt-2">
+                  <input
+                    type="text"
+                    class="form-control bg-dark text-light border-secondary"
+                    placeholder="Telusuri"
+                    aria-label="Username"
+                    aria-describedby="basic-addon1"
+                  />
+                  <span class="input-group-text" id="basic-addon1"
+                    ><span class="material-symbols-outlined">
+                      search
+                    </span></span
+                  >
+                </div>
+              </li>
+            </ul>
+            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button
+                  type="button"
+                  class="btn btn-dark"
+                  data-bs-toggle="modal"
+                  data-bs-target="#tambahVideo"
+                >
+                  <span class="material-symbols-outlined p-2">
+                    add_circle
+                  </span>
+                </button>
+
+                <!-- Modal -->
+                <div
+                  class="modal fade"
+                  id="tambahVideo"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-light" id="exampleModalLabel">
+                          Modal title
+                        </h1>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+
+                        <!-- form -->
+
+                      </div>
+                      <div class="modal-footer">
+                        <button
+                          type="button"
+                          class="btn btn-secondary"
+                          data-bs-dismiss="modal"
+                        >
+                          Close
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          Save changes
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="dropdown-left p-2">
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-sm"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                   <span class="material-symbols-outlined p-2">
+                    notifications
+                  </span>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end p-2"
+                  >
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Action two</a></li>
+                    <li><a class="dropdown-item" href="#">Action three</a></li>
+                  </ul>
+                </div> -->
+
+                <div class="dropdown-left p-2">
+                  <button
+                    type="button"
+                    class="btn btn-dark btn-sm"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    <a class="navbar-brand" href="#">
+                      <img src="./images/IMG-20240428-WA0095-01.jpeg"
+                      class="rounded-circle alt="Bootstrap" width="30"
+                      height="30" />
+                    </a>
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
+                  >
+                    <li>
+                      <a class="dropdown-item" href="/channel.html"
+                        >Lihat Channel Anda</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="/studio.html">studio</a>
+                    </li>
+                    <li><a class="dropdown-item" href="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- sidebar -->
+      <div
+        class="offcanvas offcanvas-start bg-dark text-light"
+        tabindex="-1"
+        id="sidebar"
+        aria-labelledby="offcanvasExampleLabel"
+        style="width: 25vw"
+      >
+        <div class="offcanvas-header">
+          <img src="./images/logo.png" alt="Bootstrap" width="30" height="30" />
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Studio</h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="container-fluid">
+            <li class="list-group-item bg-dark text-light">
+              <a
+                href="/index.html"
+                type="button"
+                class="btn btn-dark d-lg-flex active btn-md w-100"
+              >
+                <span class="material-symbols-outlined me-3"> home </span>
+                <strong class="me-auto">Dashboard</strong>
+              </a>
+            </li>
+            <li class="list-group-item bg-dark text-light">
+              <a
+                href="/konten.html"
+                type="button"
+                class="btn btn-dark d-lg-flex btn-md w-100"
+              >
+                <span class="material-symbols-outlined me-3"> smb_share </span>
+                <strong class="me-auto">Konten</strong>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- endsidebar -->
+    </header>
+
+    <main class="container-fluid mt-5">
+      <div class="card text-bg-dark container">
+        <div class="card-body">
+          <h1>Konten channel</h1>
+        </div>
+      </div>
+      <div class="card text-bg-dark container">
+        <div class="card-header">
+          <ul class="nav nav-tabs card-header-tabs">
+            <li class="nav-item">
+              <a
+                class="nav-link text-light fw-bold"
+                aria-current="true"
+                href="#"
+                >Video</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="card-body">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Video</th>
+                <th scope="col">Tanggal</th>
+                <th scope="col">Komentar</th>
+                <th scope="col">Suka vs Tidak Suka</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">
+                  <div class="card text-bg-dark mb-3" style="max-width: 540px">
+                    <div class="row g-0">
+                      <div class="col-md-4">
+                        <img
+                          src="https://i9.ytimg.com/vi/oSKTt3TWmIg/mqdefault.jpg?sqp=CPzc4LIG-oaymwEmCMACELQB8quKqQMa8AEB-AH-CYAC0AWKAgwIABABGEMgTChlMA8=&rs=AOn4CLD05uBUNm-JFubj4spmqIA2XswGow"
+                          class="img-fluid rounded-start"
+                          alt="..."
+                        />
+                      </div>
+                      <div class="col-md-8">
+                        <div class="card-body">
+                          <h5 class="card-title">Tutorial Laravel 10</h5>
+                          <p class="card-text">
+                            laravel 11 adala sadash asda ....
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </th>
+                <td>17 Jun 2023</td>
+                <td>11</td>
+                <td>@1-2</td>
+                <td>
+                  <form action="" method="post">
+                    <button class="btn btn-danger">Hapus</button>
+                  </form>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
