@@ -17,137 +17,166 @@
   </head>
   <body class="bg-dark">
     <header>
-      <nav
-        class="navbar navbar-expand-lg navbar-dark"
-        data-bs-theme="dark"
-        aria-label="Thirteenth navbar example"
-      >
-        <div class="container-fluid">
-          <button
-            class="navbar-toggler mb-2"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarsExample11"
-            aria-controls="navbarsExample11"
-            aria-expanded="true"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <a
-            class="navbar-brand mt-2 d-none d-lg-block"
-            data-bs-toggle="offcanvas"
-            href="#sidebar"
-            role="button"
-            aria-controls="offcanvasExample"
-          >
-            <span class="material-symbols-outlined fs-2"> menu </span>
-          </a>
-
-          <a class="navbar-brand" href="#">
-            <img
-              src="./images/logo.png"
-              alt="Bootstrap"
-              width="30"
-              height="30"
-            />
-          </a>
-          <div class="navbar-collapse d-lg-flex collapse" id="navbarsExample11">
-            <a class="navbar-brand col-lg-3 me-0" href="#"> Studio</a>
-            <ul class="navbar-nav col-lg-6 justify-content-lg-center">
-              <li class="nav-item">
-                <div class="input-group mb-3 mb-lg-0 mt-2">
-                  <input
-                    type="text"
-                    class="form-control bg-dark text-light border-secondary"
-                    placeholder="Telusuri"
-                    aria-label="Username"
-                    aria-describedby="basic-addon1"
+      <nav class="">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col d-md d-xl-block p-1">
+              <div
+                class="btn-group p-1"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button
+                  type="button"
+                  class="btn btn-dark d-none d-md-block"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#sidebarLeft"
+                  aria-controls="offcanvasExample"
+                >
+                  <span class="material-symbols-outlined"> menu </span>
+                </button>
+                <button type="button" class="btn btn-dark">
+                  <img
+                    src="./images/logo.png"
+                    alt="Bootstrap"
+                    width="40"
+                    height="40"
                   />
-                  <span class="input-group-text" id="basic-addon1"
-                    ><span class="material-symbols-outlined">
-                      search
-                    </span></span
-                  >
-                </div>
-              </li>
-            </ul>
-            <div class="d-lg-flex col-lg-3 justify-content-lg-end">
+                  <strong>Youtube</strong>
+                </button>
+              </div>
+
+              <!-- <a
+                class="navbar-brand p-2 m"
+                data-bs-toggle="offcanvas"
+                href="#sidebar"
+                role="button"
+                aria-controls="offcanvasExample"
+              >
+                <span class="material-symbols-outlined fs-2"> menu </span>
+              </a>
+              <img
+                src="./images/logo.png"
+                alt="Bootstrap"
+                width="40"
+                height="40"
+              />
+
+              <a class="navbar-brand fs-4" href="#"> Youtube</a> -->
+            </div>
+            <div class="col-6 d-none d-md-block p-3">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Telusuri"
+                  aria-label="Recipient's username"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-outline-secondary"
+                  type="button"
+                  id="button-addon2"
+                >
+                  <span class="material-symbols-outlined p-1"> search </span>
+                </button>
+              </div>
+            </div>
+            <div class="col p-2">
               <div
                 class="btn-group"
                 role="group"
                 aria-label="Basic mixed styles example"
               >
                 <button type="button" class="btn btn-dark">
-                  <span class="material-symbols-outlined p-2">
+                  <span class="material-symbols-outlined fs-1">
                     add_circle
                   </span>
                 </button>
-                <!-- <div class="dropdown-left p-2">
-                  <button
-                    type="button"
-                    class="btn btn-dark btn-sm"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                   <span class="material-symbols-outlined p-2">
-                    notifications
-                  </span>
-                  </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end p-2"
-                  >
-                    <li><a class="dropdown-item" href="#">Action</a></li>
-                    <li><a class="dropdown-item" href="#">Action two</a></li>
-                    <li><a class="dropdown-item" href="#">Action three</a></li>
-                  </ul>
-                </div> -->
+                <button
+                  type="button"
+                  class="btn btn-dark d-md-none d-xll-block"
+                  data-bs-toggle="offcanvas"
+                  data-bs-target="#sidebarRight"
+                  aria-controls="offcanvasExample"
+                >
+                  <img
+                    src="./images/IMG-20240428-WA0095-01.jpeg"
+                    class="rounded-circle"
+                    alt="Bootstrap"
+                    width="35"
+                    height="35"
+                  />
+                </button>
 
-                <div class="dropdown-left p-2">
+                <div class="dropdown d-none d-md-block p-1">
                   <button
                     type="button"
-                    class="btn btn-dark btn-sm"
+                    class="btn btn-dark d-none d-md-block"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
                   >
-                    <a class="navbar-brand" href="#">
-                      <img src="./images/IMG-20240428-WA0095-01.jpeg"
-                      class="rounded-circle alt="Bootstrap" width="30"
-                      height="30" />
-                    </a>
+                    <img
+                      src="./images/IMG-20240428-WA0095-01.jpeg"
+                      class="rounded-circle"
+                      alt="Bootstrap"
+                      width="35"
+                      height="35"
+                    />
                   </button>
-                  <ul
-                    class="dropdown-menu dropdown-menu-dark dropdown-menu-end"
-                  >
+                  <ul class="dropdown-menu dropdown-menu-dark">
+                    <li><a class="dropdown-item" href="#">Channel Saya</a></li>
                     <li>
-                      <a class="dropdown-item" href="/channel.html"
-                        >Lihat Channel Anda</a
-                      >
+                      <a class="dropdown-item" href="#">Studio</a>
                     </li>
                     <li>
-                      <a class="dropdown-item" href="/studio.html">studio</a>
+                      <a class="dropdown-item" href="#">Logout</a>
                     </li>
-                    <li><a class="dropdown-item" href="#">Logout</a></li>
                   </ul>
                 </div>
               </div>
+              <!-- <div
+                class="btn-group  "
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <a href="./studio.html" type="button" class="btn btn-dark navbar-brand">
+                  <span class="material-symbols-outlined fs-1">
+                    add_circle
+                  </span>
+                </a>
+                <button
+                    type="button"
+                    class="btn btn-dark navbar-brand"
+                   
+                  >
+                    <a class="" href="#">
+                      <img
+                        src="./images/IMG-20240428-WA0095-01.jpeg"
+                        class="rounded-circle"
+                        alt="Bootstrap"
+                        width="35"
+                        height="35"
+                      />
+                    </a>
+                  </button>
+              </div> -->
             </div>
           </div>
         </div>
       </nav>
 
-      <!-- sidebar -->
+      <!-- sidebar left -->
       <div
         class="offcanvas offcanvas-start bg-dark text-light"
         tabindex="-1"
-        id="sidebar"
+        id="sidebarLeft"
         aria-labelledby="offcanvasExampleLabel"
         style="width: 25vw"
       >
         <div class="offcanvas-header">
           <img src="./images/logo.png" alt="Bootstrap" width="30" height="30" />
-          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Studio</h5>
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Youtube</h5>
           <button
             type="button"
             class="btn-close btn-close-white"
@@ -164,7 +193,7 @@
                 class="btn btn-dark d-lg-flex active btn-md w-100"
               >
                 <span class="material-symbols-outlined me-3"> home </span>
-                <strong class="me-auto">Dashboard</strong>
+                <strong class="me-auto">Beranda</strong>
               </a>
             </li>
             <li class="list-group-item bg-dark text-light">
@@ -173,7 +202,9 @@
                 type="button"
                 class="btn btn-dark d-lg-flex btn-md w-100"
               >
-                <span class="material-symbols-outlined me-3"> smb_share </span>
+                <span class="material-symbols-outlined me-3">
+                  account_circle
+                </span>
                 <strong class="me-auto">Konten</strong>
               </a>
             </li>
@@ -181,6 +212,75 @@
         </div>
       </div>
       <!-- endsidebar -->
+      <!-- sidebar right -->
+      <div
+        class="offcanvas offcanvas-end bg-dark text-light"
+        tabindex="-1"
+        id="sidebarRight"
+        aria-labelledby="offcanvasRightLabel"
+      >
+        <div class="offcanvas-header">
+          <img
+            src="./images/IMG-20240428-WA0095-01.jpeg"
+            class="rounded-circle me-3"
+            alt="Bootstrap"
+            width="50"
+            height="50"
+          />
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+            Hadiid Andri Yulison
+          </h5>
+          <button
+            type="button"
+            class="btn-close btn-close-white"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="">
+            <li class="list-group-item bg-dark text-light">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-dark">
+                  <span class="material-symbols-outlined"> home </span>
+                </button>
+                <button type="button" class="btn btn-dark">Beranda</button>
+              </div>
+            </li>
+            <li class="list-group-item bg-dark text-light">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-dark">
+                  <span class="material-symbols-outlined"> library_books </span>
+                </button>
+                <a href="/konten.html" type="button" class="btn btn-dark">Konten</a>
+              </div>
+            </li>
+
+            <li class="list-group-item bg-dark text-light">
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic mixed styles example"
+              >
+                <button type="button" class="btn btn-dark">
+                  <span class="material-symbols-outlined"> logout </span>
+                </button>
+                <button type="button" class="btn btn-dark">Logout</button>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- endsidebar right -->
     </header>
 
     <main class="container-fluid mt-5">
@@ -191,12 +291,11 @@
               <h5 class="card-header">Total Konten</h5>
               <div class="card-body">
                 <h5 class="card-title">Total Konten : 32 Video</h5>
-                  <img
+                <img
                   class="img-fluid rounded mt-3"
                   src="https://www.gstatic.com/youtube/img/promos/growth/3dcbeefeab5e82687817c0c8499fee91836836f78d8e5b978790b979a8308b92_160x160.png"
                   alt=""
                 />
-                
               </div>
             </div>
           </div>
@@ -205,26 +304,24 @@
               <h5 class="card-header">Total Video Disukai</h5>
               <div class="card-body">
                 <h5 class="card-title">Video Disukai : 32</h5>
-                  <img
+                <img
                   class="img-fluid rounded mt-3"
                   src="https://www.gstatic.com/youtube/img/promos/growth/3dcbeefeab5e82687817c0c8499fee91836836f78d8e5b978790b979a8308b92_160x160.png"
                   alt=""
                 />
-                
               </div>
             </div>
           </div>
-           <div class="col">
+          <div class="col">
             <div class="card text-bg-dark">
               <h5 class="card-header">Total Video Tidak Disukai</h5>
               <div class="card-body">
                 <h5 class="card-title">Video Tidak Disukai : 32</h5>
-                 <img
+                <img
                   class="img-fluid rounded mt-3"
                   src="https://www.gstatic.com/youtube/img/promos/growth/3dcbeefeab5e82687817c0c8499fee91836836f78d8e5b978790b979a8308b92_160x160.png"
                   alt=""
                 />
-                
               </div>
             </div>
           </div>
